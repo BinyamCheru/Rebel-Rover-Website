@@ -2,14 +2,14 @@ import { CiSearch } from "react-icons/ci";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import NavLinks from "./NavLinks";
-import navLogo from "../assets/logo.png";
+import navLogo from "../assets/images/logo.png";
 import Search from "./Search";
 
 const Navbar = () => {
   return (
     <>
-      <div className="relative">
-        <nav className="bg-black opacity-51 fixed w-screen">
+      <div className="relative z-40">
+        <nav className="glass fixed w-screen">
           <div className="navbar align-element">
             <div className="navbar-start">
               {/* LOGO */}
@@ -27,7 +27,7 @@ const Navbar = () => {
                 </label>
                 <ul
                   tabIndex={0}
-                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52"
+                  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-900 rounded-box w-52"
                 >
                   <NavLinks />
                 </ul>
