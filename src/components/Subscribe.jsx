@@ -4,7 +4,7 @@ import Button from "./Button";
 const Subscribe = () => {
   return (
     <div
-      className="flex items-center justify-center bg-center bg-cover"
+      className="flex items-center justify-center bg-center bg-cover py-4 md:py-16 lg:h-[542px] "
       style={{ backgroundImage: `url(${subscribe})` }}
     >
       <div
@@ -13,8 +13,8 @@ const Subscribe = () => {
         <h1 className="text-white text-4xl md:text-5xl font-bold capitalize">
           Subscribe to get special price
         </h1>
-        <p className="text-white md:text-lg font-medium opacity-80">
-          Don't wanna miss something? subscribe right now and get special <br />{" "}
+        <p className="text-white max-w-lg md:text-lg font-medium opacity-80">
+          Don't wanna miss something? subscribe right now and get special
           promotion and monthly newsletter
         </p>
         <div className="max-w-[80vh] md:w-full text-center py-1.5 px-3 bg-white rounded-full flex items-center justify-between">
