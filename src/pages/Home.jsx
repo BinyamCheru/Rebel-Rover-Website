@@ -1,4 +1,10 @@
-import { Hero, Button, TravelCarousel, WhyUs } from "../components";
+import {
+  Hero,
+  Button,
+  TravelCarousel,
+  WhyUs,
+  TourPartner,
+} from "../components";
 import heroImg from "../assets/images/home-hero-bg.png";
 
 const Home = () => {
@@ -33,6 +39,7 @@ const Home = () => {
       </Hero>
       <TravelCarousel />
       <WhyUs />
+      <TourPartner />
     </>
   );
 };
