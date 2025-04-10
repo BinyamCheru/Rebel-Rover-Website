@@ -2,14 +2,14 @@ import { HiLocationMarker } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/footer_logo.png";
 import { Link } from "react-router-dom";
 import SocialLinks from "./SocialLinks";
 import Subscribe from "./Subscribe";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100">
+    <footer>
       <Subscribe />
       <div className="py-8 flex flex-col align-element md:justify-around lg:justify-between items-center space-y-4 md:flex-row space-x-0 lg:space-x-8 md:items-start">
         {/* LOGO */}
@@ -42,16 +42,28 @@ const Footer = () => {
         {/* QUICK LINK */}
         <div className="flex flex-col space-y-2 items-center md:items-start">
           <h4 className="font-bold text-lg mb-2">Quick Link</h4>
-          <Link to="/" className="text-gray-500">
+          <Link
+            to="/"
+            className="text-gray-500 duration-200 hover:text-gray-800 hover:font-medium"
+          >
             Home
           </Link>
-          <Link to="about" className="text-gray-500">
+          <Link
+            to="about"
+            className="text-gray-500 duration-200 hover:text-gray-800 hover:font-medium"
+          >
             About Us
           </Link>
-          <Link to="/" className="text-gray-500">
+          <Link
+            to="/"
+            className="text-gray-500 duration-200 hover:text-gray-800 hover:font-medium"
+          >
             Tours
           </Link>
-          <Link to="contact" className="text-gray-500">
+          <Link
+            to="contact"
+            className="text-gray-500 duration-200 hover:text-gray-800 hover:font-medium"
+          >
             Contact
           </Link>
         </div>

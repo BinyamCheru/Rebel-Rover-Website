@@ -4,6 +4,7 @@ import {
   TravelCarousel,
   WhyUs,
   TourPartner,
+  TestimonialCarousel,
 } from "../components";
 import heroImg from "../assets/images/home-hero-bg.png";
 
@@ -40,6 +41,7 @@ const Home = () => {
       <TravelCarousel />
       <WhyUs />
       <TourPartner />
+      <TestimonialCarousel />
     </>
   );
 };
