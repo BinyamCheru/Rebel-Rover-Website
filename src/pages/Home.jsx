@@ -46,3 +46,5 @@ const Home = () => {
   );
 };
 export default Home;
+
+// Happy Homepage responsive layout bug still remains for very small screens 
