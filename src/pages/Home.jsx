@@ -1,4 +1,4 @@
-import { Hero, Button, TravelCarousel } from "../components";
+import { Hero, Button, TravelCarousel, WhyUs } from "../components";
 import heroImg from "../assets/images/home-hero-bg.png";
 
 const Home = () => {
@@ -32,6 +32,7 @@ const Home = () => {
         </div>
       </Hero>
       <TravelCarousel />
+      <WhyUs />
     </>
   );
 };
