@@ -1,20 +1,14 @@
-import { Link, Outlet } from "react-router-dom";
-import { Button, Footer } from "../components";
-import Navbar from "../components/Navbar";
+import { Outlet, useNavigation } from "react-router-dom";
+import { Footer, Navbar } from "../components";
 
 const AppLayout = () => {
+  const navigation = useNavigation();
+  const isPageLoading = navigation.state === "loading";
   return (
     <>
-      {/* <nav className="flex space-x-4">
-        <Link to="/">Home</Link>
-        <Link to="about">About Us</Link>
-        <Link to="blog">Blog</Link>
-        <Link to="contact">Contact</Link>
-        <Link to="package">Package</Link>
-      </nav> */}
       <Navbar />
-      <Outlet />
-      <Footer/>
+      {isPageLoading ? <Loading /> : <Outlet />}
+      <Footer />
     </>
   );
 };
