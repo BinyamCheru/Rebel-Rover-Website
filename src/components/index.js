@@ -6,3 +6,4 @@ export { default as TravelCarousel } from "./TravelCarousel";
 export { default as WhyUs } from "./WhyUs";
 export { default as TourPartner } from "./TourPartner";
 export { default as TestimonialCarousel } from "./TestimonialCarousel";
+export { default as ErrorElement } from "./ErrorElement";

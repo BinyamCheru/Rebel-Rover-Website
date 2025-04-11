@@ -9,11 +9,15 @@ import {
   SingleBlog,
 } from "./pages";
 
+// actions
+import { action as subscribeAction } from "./components/Subscribe";
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
     errorElement: <Error />,
+    action: subscribeAction,
     children: [
       {
         index: true,
